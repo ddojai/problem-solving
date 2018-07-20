@@ -1,4 +1,4 @@
-package datastructure;
+package datastructure.ch02;
 
 public class HanoiTowerSolu {
     public static void main(String[] args) {

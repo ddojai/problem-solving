@@ -1,4 +1,4 @@
-package datastructure;
+package datastructure.ch02;
 
 public class FibonacciFunc {
     public static void main(String[] args) {

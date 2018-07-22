@@ -1,4 +1,4 @@
-package codility.FrogRiverOne;
+package codility.CountingElements.FrogRiverOne;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

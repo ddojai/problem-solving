@@ -1,4 +1,4 @@
-package codility.PermCheck;
+package codility.CountingElements.PermCheck;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

@@ -1,31 +1,28 @@
-package codility.PermMissingElem;
+package codility.TimeComplexity.FrogJmp;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 public class Solution {
-    public int solution(int[] A) {
+    public int solution(int X, int Y, int D) {
         // write your code in Java SE 8
-        int[] B = new int[A.length + 1];
-        for (int n : A) {
-            B[n - 1] = 1;
-        }
-
-        int num = -1;
-        for (int i = 0; i < B.length; i++) {
-            if (B[i] == 0) {
-                num = i + 1;
+        if (Y == X)
+            return 0;
+        else {
+            int value = (Y - X) / D;
+            int remainder = (Y - X) % D;
+            if (remainder == 0) {
+                return value;
+            } else {
+                return value + 1;
             }
         }
-        return num;
     }
 
     public static void main(String[] args) throws IOException {
-
-        int[] list = {2, 3, 1, 5};
         Solution solution = new Solution();
-        int result = solution.solution(list);
+        int result = solution.solution(10, 85, 30);
 
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         bw.write(String.valueOf(result));

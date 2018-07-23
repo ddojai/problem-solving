@@ -1,36 +1,31 @@
-package codility.MissingInteger;
+package codility.TimeComplexity.PermMissingElem;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
-class Solution {
+public class Solution {
     public int solution(int[] A) {
         // write your code in Java SE 8
-        int[] B = new int[A.length];
+        int[] B = new int[A.length + 1];
         for (int n : A) {
-            if (1 <= n && n <= A.length) {
-                B[n - 1] = 1;
-            }
+            B[n - 1] = 1;
         }
 
-        int min = 0;
+        int num = -1;
         for (int i = 0; i < B.length; i++) {
             if (B[i] == 0) {
-                min = i + 1;
-                break;
+                num = i + 1;
             }
         }
-        if (min == 0) {
-            min = B.length + 1;
-        }
-        return min;
+        return num;
     }
 
     public static void main(String[] args) throws IOException {
-        int[] arr = {1, 3, 6, 4, 1, 2};
+
+        int[] list = {2, 3, 1, 5};
         Solution solution = new Solution();
-        int result = solution.solution(arr);
+        int result = solution.solution(list);
 
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         bw.write(String.valueOf(result));

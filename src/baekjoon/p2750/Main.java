@@ -1,4 +1,4 @@
-package baekjoon.n2750;
+package baekjoon.p2750;
 
 import java.io.*;
 

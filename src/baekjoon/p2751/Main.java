@@ -1,4 +1,4 @@
-package baekjoon.n2751;
+package baekjoon.p2751;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

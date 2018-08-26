@@ -2,6 +2,9 @@ package baekjoon.p1978;
 
 import java.io.*;
 
+/**
+ * 소수찾기
+ */
 class Main {
     public static void main(String[] args) {
         try {

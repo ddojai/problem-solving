@@ -34,7 +34,7 @@ class Main {
                 String[] split = input.split(" ");
                 switch (split[0]) {
                     case "push":
-                        stk.addFirst(Integer.parseInt(split[1]));
+                        stk.offerFirst(Integer.parseInt(split[1]));
                         break;
                     case "pop":
                         if (stk.peekFirst() == null) {

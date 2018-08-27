@@ -32,30 +32,36 @@ class Main {
 
             for (String input : inputList) {
                 String[] split = input.split(" ");
-                if (split[0].equals("push")) {
-                    stk.addFirst(Integer.parseInt(split[1]));
-                } else if (split[0].equals("pop")) {
-                    if (stk.peekFirst() == null) {
-                        bw.write("-1\n");
-                    } else {
-                        bw.write(stk.pollFirst() + "\n");
-                    }
-                } else if (split[0].equals("size")) {
-                    bw.write(stk.size() + "\n");
-                } else if (split[0].equals("empty")) {
-                    if (stk.isEmpty()) {
-                        bw.write("1\n");
-                    } else {
-                        bw.write("0\n");
-                    }
-                } else if (split[0].equals("top")) {
-                    if (stk.peekFirst() == null) {
-                        bw.write("-1\n");
-                    } else {
-                        bw.write(stk.peekFirst() + "\n");
-                    }
-                } else {
-                    throw new IOException("invalid input");
+                switch (split[0]) {
+                    case "push":
+                        stk.addFirst(Integer.parseInt(split[1]));
+                        break;
+                    case "pop":
+                        if (stk.peekFirst() == null) {
+                            bw.write("-1\n");
+                        } else {
+                            bw.write(stk.pollFirst() + "\n");
+                        }
+                        break;
+                    case "size":
+                        bw.write(stk.size() + "\n");
+                        break;
+                    case "empty":
+                        if (stk.isEmpty()) {
+                            bw.write("1\n");
+                        } else {
+                            bw.write("0\n");
+                        }
+                        break;
+                    case "top":
+                        if (stk.peekFirst() == null) {
+                            bw.write("-1\n");
+                        } else {
+                            bw.write(stk.peekFirst() + "\n");
+                        }
+                        break;
+                    default:
+                        throw new IOException("invalid input");
                 }
             }
 

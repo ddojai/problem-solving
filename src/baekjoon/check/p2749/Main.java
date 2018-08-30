@@ -1,10 +1,13 @@
-package baekjoon.p2749;
+package baekjoon.check.p2749;
 
 import java.io.*;
 
 /**
  * 2749번 피보나치 수 3
  * https://www.acmicpc.net/problem/2749
+ *
+ * 참고
+ * https://www.acmicpc.net/blog/view/28
  */
 class Main {
 
@@ -23,7 +26,6 @@ class Main {
             fibo[1] = 1;
 
             // N번째 피보나치 수를 M으로 나눈 나머지는 N%P번째 피보나치 수를 M을 나눈 나머지와 같습니다.
-            // https://www.acmicpc.net/blog/view/28
             for (int i = 2; i < P; i++) {
                 fibo[i] = fibo[i - 1] + fibo[i - 2];
                 fibo[i] %= MOD;

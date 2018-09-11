@@ -35,7 +35,7 @@ public class Solution {
     private static void printArr(String[] arr) {
         StringBuilder sb = new StringBuilder();
         for(String str: arr) {
-            sb.append(", \""+str+"\"");
+            sb.append(", \"").append(str).append("\"");
         }
         System.out.println(sb.toString().replaceFirst(", ", ""));
     }

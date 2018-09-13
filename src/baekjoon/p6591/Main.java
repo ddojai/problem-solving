@@ -1,4 +1,4 @@
-package baekjoon.check.p6591;
+package baekjoon.p6591;
 
 import java.io.*;
 import java.util.ArrayList;

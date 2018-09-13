@@ -1,4 +1,4 @@
-package baekjoon.check.p2749;
+package baekjoon.p2749;
 
 import java.io.*;
 

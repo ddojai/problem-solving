@@ -1,4 +1,4 @@
-package baekjoon.check.p10166;
+package baekjoon.p10166;
 
 import java.util.*;
 

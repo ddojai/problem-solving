@@ -1,4 +1,4 @@
-package baekjoon.check.p2407;
+package baekjoon.p2407;
 
 import java.io.*;
 import java.math.BigInteger;

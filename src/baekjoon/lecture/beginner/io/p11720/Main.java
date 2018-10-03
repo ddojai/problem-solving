@@ -1,4 +1,4 @@
-package baekjoon.print.p11720;
+package baekjoon.lecture.beginner.io.p11720;
 
 import java.util.Scanner;
 

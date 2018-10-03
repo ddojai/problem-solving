@@ -1,4 +1,4 @@
-package baekjoon.lecture.advanced.io.p2557;
+package baekjoon.lecture.beginner.io.p2557;
 
 public class Main {
     public static void main(String[] args)

@@ -1,6 +1,5 @@
 package baekjoon.lecture.beginner.dp.p11054;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {

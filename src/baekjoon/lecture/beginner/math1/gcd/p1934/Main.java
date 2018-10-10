@@ -1,4 +1,4 @@
-package baekjoon.lecture.beginner.math1.p1934;
+package baekjoon.lecture.beginner.math1.gcd.p1934;
 
 import java.util.Scanner;
 

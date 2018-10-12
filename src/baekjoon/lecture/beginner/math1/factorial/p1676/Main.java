@@ -1,4 +1,4 @@
-package baekjoon.etc.p1676;
+package baekjoon.lecture.beginner.math1.factorial.p1676;
 
 import java.io.*;
 

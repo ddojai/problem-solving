@@ -6,9 +6,9 @@ import java.io.*;
 class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
         String[] input = br.readLine().split(" ");
+        br.close();
+
         int start = Integer.parseInt(input[0]);
         int end = Integer.parseInt(input[1]);
 
@@ -29,13 +29,12 @@ class Main {
             }
         }
 
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         for (int i = start; i <= end; i++) {
             if (list[i] == 0) {
                 bw.write(i + "\n");
             }
         }
-
-        br.close();
         bw.close();
     }
 }

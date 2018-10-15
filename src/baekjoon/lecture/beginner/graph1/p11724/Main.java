@@ -36,9 +36,6 @@ public class Main {
     }
 
     private static void dfs(ArrayList<Integer>[] a, boolean[] check, int x) {
-        if (check[x]) {
-            return;
-        }
         check[x] = true;
         for (int y : a[x]) {
             if (!check[y]) {

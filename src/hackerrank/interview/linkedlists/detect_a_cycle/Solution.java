@@ -1,4 +1,4 @@
-package hackerrank.tut.ctci.linked_lists_detect_a_cycle;
+package hackerrank.interview.linkedlists.detect_a_cycle;
 
 public class Solution {
     class Node {

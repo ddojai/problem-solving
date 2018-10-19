@@ -1,4 +1,4 @@
-package hackerrank.tut.ctci.string_making_anagrams;
+package hackerrank.interview.string_manipulation.making_anagrams;
 
 import java.io.*;
 import java.math.*;

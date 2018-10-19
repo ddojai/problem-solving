@@ -1,4 +1,4 @@
-package hackerrank.tut.ctci.arrays_left_rotation;
+package hackerrank.interview.arrays.left_rotation;
 
 import java.io.*;
 import java.math.*;

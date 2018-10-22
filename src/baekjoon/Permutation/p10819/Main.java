@@ -1,5 +1,6 @@
-package baekjoon.Permutation.p10974;
+package baekjoon.Permutation.p10819;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -9,15 +10,25 @@ public class Main {
 
         int[] a = new int[n];
         for (int i = 0; i < n; i++) {
-            a[i] = i + 1;
+            a[i] = scanner.nextInt();
         }
 
+        Arrays.sort(a);
+
+        int ans = 0;
         do {
-            for (int num : a) {
-                System.out.print(num + " ");
-            }
-            System.out.println();
+            ans = Math.max(ans, cal(a));
         } while (nextPermutation(a, n));
+
+        System.out.println(ans);
+    }
+
+    private static int cal(int[] a) {
+        int sum = 0;
+        for (int i = 0; i < a.length - 1; i++) {
+            sum += Math.abs(a[i] - a[i + 1]);
+        }
+        return sum;
     }
 
     private static boolean nextPermutation(int[] a, int n) {

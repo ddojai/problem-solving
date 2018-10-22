@@ -1,4 +1,4 @@
-package baekjoon.Permutation.p10973;
+package baekjoon.Permutation.p10974;
 
 import java.util.Scanner;
 
@@ -9,25 +9,26 @@ public class Main {
 
         int[] a = new int[n];
         for (int i = 0; i < n; i++) {
-            a[i] = scanner.nextInt();
+            a[i] = i + 1;
         }
 
-        boolean hasNext = prevPermutation(a, n);
-        if (hasNext) {
+        boolean hasNext;
+        do {
             for (int num : a) {
                 System.out.print(num + " ");
             }
-        } else {
-            System.out.println(-1);
-        }
+            System.out.println();
+
+            hasNext = nextPermutation(a, n);
+        } while (hasNext);
     }
 
-    private static boolean prevPermutation(int[] a, int n) {
+    private static boolean nextPermutation(int[] a, int n) {
         int i = n - 1;
-        while (i > 0 && a[i - 1] <= a[i]) i -= 1;
+        while (i > 0 && a[i - 1] >= a[i]) i -= 1;
         if (i <= 0) return false;
         int j = n - 1;
-        while (a[j] >= a[i - 1]) j -= 1;
+        while (a[j] <= a[i - 1]) j -= 1;
         swap(a, j, i - 1);
         j = n - 1;
 
@@ -45,3 +46,4 @@ public class Main {
         a[bIdx] = temp;
     }
 }
+

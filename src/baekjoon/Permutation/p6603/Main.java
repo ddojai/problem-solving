@@ -16,7 +16,7 @@ public class Main {
             for (int i = 0; i < n; i++) {
                 a[i] = scanner.nextInt();
 
-                if (i < n - 6) {
+                if (i < n - LOTTO_CNT) {
                     d[i] = 0;
                 } else {
                     d[i] = 1;

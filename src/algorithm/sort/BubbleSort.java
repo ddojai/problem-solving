@@ -1,5 +1,8 @@
-package datastructure.ch10;
+package algorithm.sort;
 
+/**
+ * Reference : 윤성우의 열혈 자료구조 (CH.10) - 도서
+ */
 public class BubbleSort {
     private static void bubbleSort(int arr[], int n) {
         for (int i = 0; i < n - 1; i++) {

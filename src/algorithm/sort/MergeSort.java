@@ -1,7 +1,10 @@
-package datastructure.ch10;
+package algorithm.sort;
 
 import java.io.*;
 
+/**
+ * Reference : 윤성우의 열혈 자료구조 (CH.10) - 도서
+ */
 public class MergeSort {
     public static void main(String[] args) throws IOException {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

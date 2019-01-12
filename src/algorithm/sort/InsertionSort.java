@@ -1,5 +1,8 @@
-package datastructure.ch10;
+package algorithm.sort;
 
+/**
+ * Reference : 윤성우의 열혈 자료구조 (CH.10) - 도서
+ */
 public class InsertionSort {
     private static void insertionSort(int arr[], int n) {
         int j;

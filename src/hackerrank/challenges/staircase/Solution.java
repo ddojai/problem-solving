@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-// easy
+// Easy
 public class Solution {
 
     // Complete the staircase function below.

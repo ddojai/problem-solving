@@ -6,6 +6,7 @@ import java.text.*;
 import java.util.*;
 import java.util.regex.*;
 
+// easy
 public class Solution {
 
     /*

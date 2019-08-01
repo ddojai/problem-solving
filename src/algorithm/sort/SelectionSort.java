@@ -6,15 +6,15 @@ package algorithm.sort;
 public class SelectionSort {
     private static void selectionSort(int arr[], int n) {
         for (int i = 0; i < n - 1; i++) {
-            int maxIdx = i;
+            int minIdx = i;
             for (int j = i + 1; j < n; j++) {
-                if (arr[j] < arr[maxIdx]) {
-                    maxIdx = j;
+                if (arr[j] < arr[minIdx]) {
+                    minIdx = j;
                 }
             }
             int temp = arr[i];
-            arr[i] = arr[maxIdx];
-            arr[maxIdx] = temp;
+            arr[i] = arr[minIdx];
+            arr[minIdx] = temp;
         }
     }
 

@@ -1,4 +1,4 @@
-package leetcode.problems.roman_to_integer;
+package leetcode.problems.romanToInteger;
 
 class Solution {
     public int romanToInt(String s) {

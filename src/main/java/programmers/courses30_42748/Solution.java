@@ -1,4 +1,4 @@
-package programmers.sort.kthNumber;
+package programmers.courses30_42748;
 
 import java.util.Arrays;
 

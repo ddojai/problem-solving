@@ -1,4 +1,4 @@
-package baekjoon.math.p1476;
+package baekjoon.bruteforce.p1476;
 
 import java.util.Scanner;
 

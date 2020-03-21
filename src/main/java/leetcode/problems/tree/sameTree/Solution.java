@@ -1,4 +1,4 @@
-package leetcode.problems.sameTree;
+package leetcode.problems.tree.sameTree;
 
 /**
  * https://leetcode.com/problems/same-tree/

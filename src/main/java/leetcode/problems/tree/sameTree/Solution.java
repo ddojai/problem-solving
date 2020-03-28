@@ -1,5 +1,7 @@
 package leetcode.problems.tree.sameTree;
 
+import leetcode.problems.tree.TreeNode;
+
 /**
  * https://leetcode.com/problems/same-tree/
  */
@@ -11,12 +13,5 @@ public class Solution {
         if (q == null || p == null) return false;
         if (p.val != q.val) return false;
         return isSameTree(p.right, q.right) && isSameTree(p.left, q.left);
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
     }
 }

@@ -1,5 +1,7 @@
 package leetcode.problems.tree.symmetricTree;
 
+import leetcode.problems.tree.TreeNode;
+
 /**
  * source: https://beccacatcheserrors.tistory.com/21
  */
@@ -19,15 +21,5 @@ public class Solution {
     if (t1.val != t2.val) return false;
 
     return isMirror(t1.left, t2.right) && isMirror(t1.right, t2.left);
-  }
-
-  public static class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-      val = x;
-    }
   }
 }

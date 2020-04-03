@@ -15,10 +15,7 @@ public class Solution {
     curr += node.val;
 
     if (node.right == null && node.left == null) {
-      if (curr == sum) {
-        return true;
-      }
-      return false;
+      return curr == sum;
     }
 
     boolean left = pathSum(node.left, curr, sum);

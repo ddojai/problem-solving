@@ -1,4 +1,4 @@
-package programmers.courses30_42748;
+package programmers.sort.level1_42748;
 
 import java.util.Arrays;
 

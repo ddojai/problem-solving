@@ -1,4 +1,4 @@
-package programmers.courses30_42840;
+package programmers.bruteForce.level1_42840;
 
 import java.util.ArrayList;
 
